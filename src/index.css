@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Great Sailor';
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+}

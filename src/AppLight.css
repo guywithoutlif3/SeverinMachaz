@@ -1,0 +1,175 @@
+body {
+  background: #E0F6E9;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.pfp {
+  margin-top: 10%;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  right: 15%;
+}
+
+.circleText {
+  transform-origin: center;
+  width: 38vw;
+  height: 38vw;
+  position: absolute;
+  top: 12%;
+  /* Adjust as needed */
+  right: 11%;
+  transform: translate(-50%, -50%);
+  /* Centers the text vertically and horizontally */
+  z-index: 1;
+  /* Ensures the text appears on top */
+}
+
+
+.NameArt {
+  margin-left: 5%;
+  height: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.MobileStartContainer {
+  position: relative;
+  height: 100vh;
+  /* Adjust this value based on your desired container height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MobilePfp {
+  z-index: 1000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.MobileNameArt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+
+/* ------------------ */
+
+nav {
+  z-index: 999999999999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #F7FDF9;
+}
+
+button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.icon-placeholder img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-placeholder {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+.text-placeholder div {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
