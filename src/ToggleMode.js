@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import { motion, AnimatePresence } from 'framer-motion';
 import './ToggleMode.scss';
-
+import Sun from './imgs/sun.svg'
+import Moon from './imgs/moon.svg'
 import React, { useEffect, useState, useRef } from 'react';
 
 
@@ -25,8 +26,8 @@ function ToggleMode({ isOpen }) {
         >
             <motion.div layout className="handle">
                 <AnimatePresence initial={false}>
-                    <motion.i
-                        className={`icon far fa-${isOn ? 'moon' : 'sun'}`}
+                    <motion.img
+                        src={isOn ? Sun :  Moon}
                         key={isOn ? 'moon' : 'sun'}
                         initial={{ y: -30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
