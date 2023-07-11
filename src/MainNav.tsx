@@ -5,6 +5,7 @@ import { useDimensions } from "./use-dimensions.ts";
 import { MenuToggle } from "./MenuToggle.tsx";
 import { Navigation } from "./Navigation.tsx";
 import { useScroll, useMotionValueEvent, MotionConfig, useTransform, useMotionValue } from "framer-motion"
+import ToggleMode from "./ToggleMode.js";
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -47,9 +48,12 @@ export const MainNav = () => {
             custom={height}
             ref={containerRef}
         >
+            
+
             <motion.div className="background" variants={sidebar} />
             <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
+            <ToggleMode isOpen={isOpen} />
         </motion.nav>
     );
 };

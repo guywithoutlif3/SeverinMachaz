@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { motion, useScroll, useMotionValueEvent, MotionConfig, useTransform, useMotionValue,useCycle } from "framer-motion"
+import { motion, useScroll, useMotionValueEvent, MotionConfig, useTransform, useMotionValue, useCycle } from "framer-motion"
 import './AppLight.css';
 import pfp from './imgs/MainPfp.jpg'
 import spinnyTxt from './imgs/circleText.svg'
@@ -7,7 +7,7 @@ import SM from './imgs/severinMachaz.svg'
 import MobileTextArt from './imgs/MobileTextArt.svg'
 import MobilePfp from './imgs/PFPMobile.svg'
 import MainNav from './MainNav.tsx'
-import React, { useEffect, useState,useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 
 
@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-    <MainNav/>
+      <MainNav />
       <div>
         {/* View for Desktop */}
         {screenWidth > 500 ?
@@ -59,24 +59,36 @@ function App() {
 
             <motion.div
             >
-              <motion.img
-                alt='NameArt'
-                className='NameArt'
-                src={SM}
-              />
+              <motion.div
+                animate={{ x: [-1000, 0] }}
+                transition={{ duration: 1 }}
+              >
+                <motion.img
+
+                  alt='NameArt'
+                  className='NameArt'
+                  src={SM}
+                />
+              </motion.div>
 
 
-              <img alt='pfp' className='pfp' src={pfp} />
-              <motion.img
-                alt='circleText'
-                className='circleText'
-                src={spinnyTxt}
-                animate={{ rotate: 360 }}
-                transition={{
-                  repeat: Infinity,
-                  duration: x,
-                  ease: 'linear',
-                }} />  </motion.div >
+              <motion.div
+                animate={{ x: [1000, 0] }}
+                transition={{ duration: 1 }}
+              >
+                <img alt='pfp' className='pfp' src={pfp} />
+                <motion.img
+                  alt='circleText'
+                  className='circleText'
+                  src={spinnyTxt}
+
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: x,
+                    ease: 'linear',
+                  }} /> </motion.div>
+            </motion.div >
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
           </MotionConfig> : null}
@@ -84,19 +96,25 @@ function App() {
         {screenWidth < 500 ? <MotionConfig>
 
           <motion.div
-          className='MobileStartContainer'>
-            <motion.img
-              alt='Mobile Pfp'
-              className='MobilePfp'
-              src={MobilePfp}
-            />
 
-            <motion.img
-              alt='NameArt'
-              className='MobileNameArt'
-              src={MobileTextArt}
-            />
+            className='MobileStartContainer'>
+            <motion.div
+              animate={{ y: [1000, 0] }}
+              transition={{ duration: 1 }}>
+              <motion.img
+                alt='Mobile Pfp'
+                className='MobilePfp'
+                src={MobilePfp}
+              />
 
+              <motion.img
+                alt='NameArt'
+                className='MobileNameArt'
+                src={MobileTextArt}
+              />
+
+
+            </motion.div>
 
           </motion.div >
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

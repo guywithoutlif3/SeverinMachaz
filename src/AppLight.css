@@ -8,26 +8,30 @@ body {
 }
 
 .pfp {
-  margin-top: 10%;
   object-fit: cover;
   border-radius: 100%;
   width: 30vw;
   height: 30vw;
   position: absolute;
-  right: 15%;
+  top: 0;
+  right: 0;
+  margin-top: 12%;
+  margin-right: 14%;
 }
 
+
 .circleText {
-  transform-origin: center;
+  /* transform-origin: center; */
   width: 38vw;
   height: 38vw;
   position: absolute;
-  top: 12%;
-  /* Adjust as needed */
-  right: 11%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  margin-top: 8%;
+  margin-right: 10%;
+  /* transform: translate(-50%, -50%); */
   /* Centers the text vertically and horizontally */
-  z-index: 1;
+  /* z-index: 1; */
   /* Ensures the text appears on top */
 }
 
@@ -52,8 +56,10 @@ body {
 .MobilePfp {
   z-index: 1000000;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin-top: 80%;
+  margin-left: 50%;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
@@ -61,8 +67,10 @@ body {
 
 .MobileNameArt {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  margin-top: 80%;
+  margin-left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: auto;

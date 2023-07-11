@@ -19,6 +19,7 @@ export const Navigation = () => (
         {items.map((item, index) => (
             <MenuItem prop1={item.prop1} prop2={item.prop2} key={index} />
         ))}
+        
     </motion.ul>
 );
 const items = [
