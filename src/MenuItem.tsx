@@ -24,7 +24,7 @@ interface MenuItemProps {
 }
 export const MenuItem: React.FC<MenuItemProps> = ({ prop1, prop2 }) => {
     const style1 = { border: `2px solid #FFB247` };
-    const style2 = { border: `2px solid #FFB247`, fontSize: "0.4em",padding: "2px",};
+    const style2 = { border: `2px solid #FFB247`, fontSize: "0.3em",padding: "2px", color: "#0C2717"};
     return (
         <motion.li
             variants={variants}

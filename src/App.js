@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import { motion, useScroll, useMotionValueEvent, MotionConfig, useTransform, useMotionValue, useCycle } from "framer-motion"
-import './AppLight.css';
+import './App.scss';
 import pfp from './imgs/MainPfp.jpg'
 import spinnyTxt from './imgs/circleText.svg'
+import spinnyTxtDark from './imgs/circleTextDark.svg'
 import SM from './imgs/severinMachaz.svg'
+import SMDark from './imgs/NameArtDark.svg'
 import MobileTextArt from './imgs/MobileTextArt.svg'
+import MobileTextArtDark from './imgs/MobileNameArtDark.svg'
 import MobilePfp from './imgs/PFPMobile.svg'
+import MobilePfpDark from './imgs/pfpMobileDark.svg'
 import MainNav from './MainNav.tsx'
 import React, { useEffect, useState, useRef } from 'react';
-
+import SkillCarousel from './SkillCarousel';
 
 
 
@@ -18,6 +22,7 @@ function App() {
 
   const { scrollY } = useScroll()
   const [x, setX] = useState(15);
+  const [mode, setMode] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [scrollYValue, setScrollYValue] = useState(0);
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -49,9 +54,16 @@ function App() {
     };
   }, []);
 
+  const handleToggle = (isOn) => {
+    console.log("i have arrived here and my value is: " + isOn)
+    setMode(isOn)
+
+
+  };
+
   return (
-    <div className="App">
-      <MainNav />
+    <div className="App" data-darkmode={mode}>
+      <MainNav onToggle={handleToggle} />
       <div>
         {/* View for Desktop */}
         {screenWidth > 500 ?
@@ -67,7 +79,7 @@ function App() {
 
                   alt='NameArt'
                   className='NameArt'
-                  src={SM}
+                  src={mode ? SMDark : SM}
                 />
               </motion.div>
 
@@ -80,7 +92,7 @@ function App() {
                 <motion.img
                   alt='circleText'
                   className='circleText'
-                  src={spinnyTxt}
+                  src={mode ? spinnyTxtDark : spinnyTxt}
 
                   animate={{ rotate: 360 }}
                   transition={{
@@ -88,6 +100,10 @@ function App() {
                     duration: x,
                     ease: 'linear',
                   }} /> </motion.div>
+
+              <motion.h2 className='WorkTitle'> Work</motion.h2>
+              <motion.p className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
+              <SkillCarousel ></SkillCarousel>
             </motion.div >
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
@@ -104,19 +120,22 @@ function App() {
               <motion.img
                 alt='Mobile Pfp'
                 className='MobilePfp'
-                src={MobilePfp}
+                src={mode ? MobilePfpDark : MobilePfp}
               />
 
               <motion.img
                 alt='NameArt'
                 className='MobileNameArt'
-                src={MobileTextArt}
+                src={mode ? MobileTextArtDark : MobileTextArt}
               />
 
 
             </motion.div>
 
           </motion.div >
+
+
+
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         </MotionConfig> : null}

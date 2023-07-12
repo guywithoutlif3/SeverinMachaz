@@ -8,9 +8,13 @@ import React, { useEffect, useState, useRef } from 'react';
 
 
 
-function ToggleMode({ isOpen }) {
+function ToggleMode({ isOpen, onToggle }) {
     const [isOn, setIsOn] = useState(false);
 
+    useEffect(() => {
+        console.log("change in the Toggle Mode too: " + isOn)
+        onToggle(isOn); // Call the onToggle function whenever isOn value changes
+    }, [isOn, onToggle]);
 
     if (!isOpen) {
         return null; // Return null if the sidebar is closed
@@ -27,8 +31,10 @@ function ToggleMode({ isOpen }) {
             <motion.div layout className="handle">
                 <AnimatePresence initial={false}>
                     <motion.img
-                        src={isOn ? Sun :  Moon}
+                        src={isOn ? Sun : Moon}
                         key={isOn ? 'moon' : 'sun'}
+
+                        style={isOn ? { width: "0.3em", height: "0.3em" } : { marginTop: "20%", width: "0.5em", height: "0.5em" }}
                         initial={{ y: -30, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: 30, opacity: 0 }}

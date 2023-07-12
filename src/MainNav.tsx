@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useRef } from "react";
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions.ts";
 import { MenuToggle } from "./MenuToggle.tsx";
@@ -27,12 +26,23 @@ const sidebar = {
     }
 };
 
-export const MainNav = () => {
+interface Props {
+    isOpenToMain: boolean;
+    onToggle: (isOn: boolean) => void;
+}
+
+export const MainNav = ({ isOpenToMain, onToggle }: Props) => {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
-
     const { scrollY } = useScroll()
+
+    const [isOnValue, setIsOnValue] = useState(false);
+
+    useEffect(() => {
+        console.log("change in the MainTsx too: " + isOnValue);
+        onToggle(isOnValue); // Call the onToggle function whenever isOn value changes
+    }, [isOnValue, onToggle]);
     useMotionValueEvent(scrollY, "change", (latest) => {
         console.log(latest)
         if (latest > 1) {
@@ -41,6 +51,11 @@ export const MainNav = () => {
             }
         }
     })
+
+    const handleToggle = (isOn) => {
+        setIsOnValue(isOn); // Receive the isOn value from ToggleMode component
+    };
+
     return (
         <motion.nav
             initial={false}
@@ -48,12 +63,12 @@ export const MainNav = () => {
             custom={height}
             ref={containerRef}
         >
-            
+
 
             <motion.div className="background" variants={sidebar} />
             <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
-            <ToggleMode isOpen={isOpen} />
+            <ToggleMode isOpen={isOpen} onToggle={handleToggle} />
         </motion.nav>
     );
 };

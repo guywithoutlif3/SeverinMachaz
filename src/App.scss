@@ -3,6 +3,10 @@ body {
 
 }
 
+html {
+  user-select: none;
+}
+
 .App {
   text-align: center;
 }
@@ -34,6 +38,8 @@ body {
   /* z-index: 1; */
   /* Ensures the text appears on top */
 }
+
+
 
 
 .NameArt {
@@ -167,6 +173,7 @@ li {
   max-height: 100%;
 
 }
+
 .refresh {
   padding: 10px;
   position: absolute;
@@ -180,4 +187,68 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.WorkTitle {
+  color: #0C2717;
+  text-align: center;
+  font-family: Great Sailor;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14063rem;
+  text-transform: capitalize;
+
+  position: absolute;
+  bottom: -3.5em;
+  margin-left: 5%;
+}
+
+.WorkSub{
+  color: #0C2717;
+  text-align: center;
+  font-family: Great Sailor;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14063rem;
+  text-transform: capitalize;
+  text-align: left;
+  position: absolute;
+  width: 65%;
+  bottom: -9em;
+  margin-left: 7%;
+}
+
+// Dark Mode stuff
+
+
+
+[data-darkmode="true"] {
+
+  background-color: #0C2717;
+
+
+
+  .background {
+    background: #FFB247;
+
+  }
+
+  .text-placeholder {
+
+    color: #0C2717;
+    border: 2px solid #0C2717 !important;
+  }
+
+  .icon-placeholder {
+    background-color: #0C2717;
+    border: 2px solid #0C2717 !important;
+  }
+
+  .ToggleNav {
+    filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(6550%) hue-rotate(103deg) brightness(92%) contrast(91%);
+  }
 }
