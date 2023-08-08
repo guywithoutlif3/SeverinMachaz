@@ -1,20 +1,140 @@
 .Skill {
     position: absolute;
-    bottom: -20em;
+    bottom: -24em;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 22px;
     background-color: #FFB247;
-    height: 35%;
+    height: 10em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 20em;
     overflow: hidden;
 
 }
-.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper{
+
+.React {
+    width: 75%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.JavaScript {
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.SQL {
+    width: 70%;
+    height: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.Quarkus {
+    margin-top: 70%;
+    margin-left: 2.5%;
+    padding: 2%;
+    background-color: #F7FDF9;
+    border-radius: 100%;
+    width: 10%;
+    height: auto;
+    margin-bottom: 0%;
+}
+
+.Spring {
+    margin-top: 80%;
+    margin-right: 2.5%;
+    padding: 2%;
+    background-color: #F7FDF9;
+    border-radius: 100%;
+    width: 10%;
+    height: auto;
+    margin-bottom: 0%;
+}
+
+.Figma {
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.expresss {
+    font-size: 1.5vw;
+    color: #F7FDF9;
+    margin-top: -2.66%;
+}
+
+.titleFrameworks {
+    color: #F7FDF9;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.JavaFDiv {
+    margin-Top: 0%;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 7vw;
+    /* Adjust image width as needed */
+}
+
+.cap {
+    font-size: 0.7em;
+    color: white;
+    margin-top: 5px;
+}
+
+
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
     height: 100%;
+}
+
+.swiper-button-next {
+    width: 0.5em !important;
+    height: 0.5em !important;
+
+    padding: 2%;
+    border-radius: 50%;
+    background-color: #F7FDF9 !important;
+    color: #FFB247 !important;
+}
+
+.swiper-button-next:after {
+    font-size: 0.5em !important;
+    font-weight: bolder;
+}
+
+.swiper-button-prev {
+    width: 0.5em !important;
+    height: 0.5em !important;
+
+    padding: 2%;
+    border-radius: 50%;
+    background-color: #F7FDF9 !important;
+    color: #FFB247 !important;
+}
+
+.swiper-button-prev:after {
+    font-size: 0.5em !important;
+    font-weight: bolder;
 }
 
 .swiperslide {
@@ -22,4 +142,44 @@
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.swiper-button-prev:hover {
+    transform: scale(110%);
+}
+.swiper-button-next:hover {
+    transform: scale(110%);
+}
+
+
+// Darkmode shazam
+
+[data-darkmode="true"] {
+    .swiper-button-prev {
+
+        background-color: #0C2717 !important;
+        color: #FFB247 !important;
+    }
+
+    .swiper-button-next {
+        background-color: #0C2717 !important;
+        color: #FFB247 !important;
+    }
+
+
+    .Quarkus {
+        background-color: #0C2717 !important;
+    }
+
+    .Spring {
+        background-color: #0C2717 !important;
+    }
+
+    .expresss {
+        color: #0C2717 !important;
+    }
+
+    .titleFrameworks {
+        color: #0C2717 !important;
+    }
 }

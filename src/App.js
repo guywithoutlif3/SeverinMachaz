@@ -129,7 +129,10 @@ function App() {
                 src={mode ? MobileTextArtDark : MobileTextArt}
               />
 
-
+              <motion.h2 className='WorkTitle'> Work</motion.h2>
+              <motion.p className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
+              <SkillCarousel ></SkillCarousel>
+              
             </motion.div>
 
           </motion.div >
