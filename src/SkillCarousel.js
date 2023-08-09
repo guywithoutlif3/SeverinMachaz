@@ -78,6 +78,7 @@ function SkillCarousel() {
     ];
 
     return (
+        //TODO: add fancy entry animation
         <motion.div className='Skill'>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {Skills.map((skill, index) => (

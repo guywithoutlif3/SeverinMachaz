@@ -13,6 +13,7 @@ import MobilePfpDark from './imgs/pfpMobileDark.svg'
 import MainNav from './MainNav.tsx'
 import React, { useEffect, useState, useRef } from 'react';
 import SkillCarousel from './SkillCarousel';
+import Personal from './Personal';
 
 
 
@@ -138,6 +139,9 @@ function App() {
                 <SkillCarousel ></SkillCarousel>
               </motion.div>
             </motion.div >
+
+            <Personal></Personal>
+
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
           </MotionConfig> : null}
@@ -178,22 +182,22 @@ function App() {
                   opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
                 }}
                 className='WorkTitleMobile'> Work</motion.h2>
-              <motion.p 
-              whileInView={{
-                opacity: 1,
-                y:0,
-                transition: {
-                  damping: 30,
-                  delay: 0.2,
-                  mass: 1,
-                  stiffness: 400,
-                  type: "spring"
-                }
-              }}
-              initial={{
-                opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
-              }}
-              className='WorkSubMobile'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
+              <motion.p
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    damping: 30,
+                    delay: 0.2,
+                    mass: 1,
+                    stiffness: 400,
+                    type: "spring"
+                  }
+                }}
+                initial={{
+                  opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+                }}
+                className='WorkSubMobile'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
               <SkillCarousel ></SkillCarousel>
 
             </motion.div>
