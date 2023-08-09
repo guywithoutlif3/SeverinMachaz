@@ -19,7 +19,8 @@ import NodeSnippet from './imgs/NodeSnippet.svg';
 import Sql from './imgs/sql.svg';
 import SqlSnippet from './imgs/sqlSnippet.svg';
 import Figma from './imgs/figma.svg';
-import Tosca from './imgs/tosca.png';
+import Php from './imgs/php.svg';
+import PhpSnippet from './imgs/phpSnippet.svg';
 
 function SkillCarousel() {
 
@@ -40,10 +41,10 @@ function SkillCarousel() {
                 <div className='JavaFDiv'>
                     <h5 className='titleFrameworks'>Frameworks</h5>
                     <div className='imgWrapper'>
-                        <figure className='image'>
+                        <figure id='image1'>
                             <img className='Spring' src={Spring} alt='Spring'></img><figcaption className='cap'>Spring</figcaption>
                         </figure>
-                        <figure className='image'>
+                        <figure id='image2'>
                             <img className='Quarkus' src={Quarkus} alt='Quarkus'></img><figcaption className='cap'>Quarkus</figcaption>
                         </figure>
                     </div>
@@ -52,7 +53,7 @@ function SkillCarousel() {
         },
         {
             language: 'Node',
-            content:<><img className='JavaScript' src={NodeSnippet} alt='CodeSnippet' /><br/><p className='expresss'>I Also know Express.js :P</p></> ,
+            content: <><img className='JavaScript' src={NodeSnippet} alt='CodeSnippet' /><br /><p className='expresss'>I Also know Express.js :P</p></>,
             logo: Node
         },
         {
@@ -70,14 +71,14 @@ function SkillCarousel() {
         },
         {
             language: 'PHP',
-            content: '',
-            logo: '<img src="cpp_logo.png" alt="C++ Logo">'
+            content: <img className='PHP' src={PhpSnippet} alt='CodeSnippet' />,
+            logo: Php
         }
 
     ];
 
     return (
-        <div className='Skill'>
+        <motion.div className='Skill'>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {Skills.map((skill, index) => (
                     <SwiperSlide className='swiperslide'>
@@ -85,7 +86,7 @@ function SkillCarousel() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </div>);
+        </motion.div>);
 
 }
 

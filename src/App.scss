@@ -5,6 +5,7 @@ body {
 
 html {
   user-select: none;
+
 }
 
 .App {
@@ -60,7 +61,7 @@ html {
 }
 
 .MobilePfp {
-  z-index: 1000000;
+  z-index: 9999;
   position: absolute;
   margin-top: 80%;
   margin-left: 50%;
@@ -86,7 +87,7 @@ html {
 /* ------------------ */
 
 nav {
-  z-index: 999999999999999;
+  z-index: 10000;
   position: absolute;
   top: 0;
   left: 0;
@@ -205,7 +206,7 @@ li {
   margin-left: 5%;
 }
 
-.WorkSub{
+.WorkSub {
   color: #0C2717;
   text-align: center;
   font-family: Great Sailor;
@@ -218,19 +219,59 @@ li {
   text-align: left;
   position: absolute;
   width: 65%;
-  bottom: -9em;
+  bottom: -9.8em;
   margin-left: 7%;
+
+}
+
+
+.WorkTitleMobile {
+  color: #0C2717;
+  text-align: center;
+  font-family: Great Sailor;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14063rem;
+  text-transform: capitalize;
+
+  position: absolute;
+  bottom: -1.9em;
+  left: 0;
+  margin-left: 25%;
+  text-align: center;
+  //margin-left: 5%;
+}
+
+.WorkSubMobile {
+  color: #0C2717;
+  text-align: center;
+  font-family: Great Sailor;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14063rem;
+  text-transform: capitalize;
+  text-align: left;
+  position: absolute;
+  width: 80%;
+  bottom: -11em;
+  left: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  //margin-left: 7%;
 }
 
 // Dark Mode stuff
 
 
 
+
 [data-darkmode="true"] {
-
   background-color: #0C2717;
-
-
 
   .background {
     background: #FFB247;
@@ -256,8 +297,16 @@ li {
     color: #E0F6E9 !important;
 
   }
-  
-  .WorkSub{
+
+  .WorkSub {
+    color: #E0F6E9 !important;
+  }
+
+  .WorkTitleMobile {
+    color: #E0F6E9 !important;
+  }
+
+  .WorkSubMobile {
     color: #E0F6E9 !important;
   }
 }

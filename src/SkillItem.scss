@@ -15,12 +15,15 @@
     border-radius: 100%;
     background-color: #F7FDF9;
 }
+
 .flip2:hover {
     transform: scale(110%);
 }
+
 .flip:hover {
     transform: scale(110%);
 }
+
 .cardItem {
     height: 100%;
     width: 50%;
@@ -67,4 +70,27 @@
         background-color: #0C2717 !important;
 
     }
+}
+
+// Mobile Shit
+
+@media (max-width: 500px) {
+
+    .flip {
+        position: absolute;
+
+        left: 0.7em;
+        top: 20.5em;
+        border-radius: 100%;
+        background-color: #F7FDF9;
+    }
+
+    .flip2 {
+        position: absolute;
+        left: 0.7em;
+        top: 22em;
+        border-radius: 100%;
+        background-color: #F7FDF9;
+    }
+
 }

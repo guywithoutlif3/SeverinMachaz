@@ -61,6 +61,7 @@ function App() {
 
   };
 
+
   return (
     <div className="App" data-darkmode={mode}>
       <MainNav onToggle={handleToggle} />
@@ -100,10 +101,42 @@ function App() {
                     duration: x,
                     ease: 'linear',
                   }} /> </motion.div>
-
-              <motion.h2 className='WorkTitle'> Work</motion.h2>
-              <motion.p className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
-              <SkillCarousel ></SkillCarousel>
+              <motion.div>
+                <motion.h2
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      damping: 30,
+                      delay: 0.2,
+                      mass: 1,
+                      stiffness: 400,
+                      type: "spring"
+                    }
+                  }}
+                  initial={{
+                    opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+                  }}
+                  className='WorkTitle'
+                > Work</motion.h2>
+                <motion.p
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      damping: 30,
+                      delay: 0.2,
+                      mass: 1,
+                      stiffness: 400,
+                      type: "spring"
+                    }
+                  }}
+                  initial={{
+                    opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+                  }}
+                  className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
+                <SkillCarousel ></SkillCarousel>
+              </motion.div>
             </motion.div >
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
@@ -129,10 +162,40 @@ function App() {
                 src={mode ? MobileTextArtDark : MobileTextArt}
               />
 
-              <motion.h2 className='WorkTitle'> Work</motion.h2>
-              <motion.p className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
+              <motion.h2
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    damping: 30,
+                    delay: 0.2,
+                    mass: 1,
+                    stiffness: 400,
+                    type: "spring"
+                  }
+                }}
+                initial={{
+                  opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+                }}
+                className='WorkTitleMobile'> Work</motion.h2>
+              <motion.p 
+              whileInView={{
+                opacity: 1,
+                y:0,
+                transition: {
+                  damping: 30,
+                  delay: 0.2,
+                  mass: 1,
+                  stiffness: 400,
+                  type: "spring"
+                }
+              }}
+              initial={{
+                opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+              }}
+              className='WorkSubMobile'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
               <SkillCarousel ></SkillCarousel>
-              
+
             </motion.div>
 
           </motion.div >
