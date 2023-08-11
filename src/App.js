@@ -14,6 +14,7 @@ import MainNav from './MainNav.tsx'
 import React, { useEffect, useState, useRef } from 'react';
 import SkillCarousel from './SkillCarousel';
 import Personal from './Personal';
+import PersonalMobile from './PersonalMobile';
 
 
 
@@ -139,7 +140,6 @@ function App() {
                 <SkillCarousel ></SkillCarousel>
               </motion.div>
             </motion.div >
-
             <Personal></Personal>
 
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -199,11 +199,10 @@ function App() {
                 }}
                 className='WorkSubMobile'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
               <SkillCarousel ></SkillCarousel>
-
+              <PersonalMobile></PersonalMobile>
             </motion.div>
 
           </motion.div >
-
 
 
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

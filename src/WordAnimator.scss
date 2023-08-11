@@ -1,0 +1,15 @@
+.word-renderer {
+    white-space: nowrap;
+}
+
+.letters {
+    display: inline-block;
+    color: #0C2717;
+}
+
+
+[data-darkmode="true"] {
+    .letters {
+        color: #E0F6E9;
+    }
+}

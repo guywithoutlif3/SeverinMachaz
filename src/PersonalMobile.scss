@@ -1,0 +1,21 @@
+.MobilePersContainer{
+    width: 100%;
+    position: absolute;
+    top: 30em;
+    left: 0;
+}
+
+.MobileTitlePersonal{
+    position: absolute;
+    top:-2em;
+    left: 0;
+    margin-left: 10%;
+    text-align: center;
+}
+
+[data-darkmode="true"] {
+
+    .MobileTitlePersonal{
+        color: #E0F6E9;
+    }
+}

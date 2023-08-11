@@ -78,8 +78,23 @@ function SkillCarousel() {
     ];
 
     return (
-        //TODO: add fancy entry animation
-        <motion.div className='Skill'>
+        <motion.div
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: {
+                    damping: 30,
+                    delay: 0.2,
+                    mass: 5,
+                    stiffness: 200,
+                    type: "spring"
+                }
+            }}
+            initial={{
+                opacity: 0, scale: 0.5, y: 40
+            }}
+            className='Skill'>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {Skills.map((skill, index) => (
                     <SwiperSlide className='swiperslide'>
