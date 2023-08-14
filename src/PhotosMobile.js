@@ -15,11 +15,27 @@ function PhotosMobile() {
 
     return (
         <motion.div className='PhotosMobile'>
+            <motion.div
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        damping: 30,
+                        delay: 0.2,
+                        mass: 1,
+                        stiffness: 400,
+                        type: "spring"
+                    }
+                }}
+                initial={{
+                    opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
+                }}
+                className='PhotoTitle1'> Photo Albums</motion.div>
             <motion.div class="parent2">
-                <motion.div class="div12"><motion.p className='ImageTitles'>Mountains</motion.p> <motion.img className='Mountains' src={MountainsMobile}></motion.img> </motion.div>
-                <motion.div class="div22"><motion.p className='ImageTitles'>Sports</motion.p> <motion.img className='Mountains' src={SportsMobile}></motion.img></motion.div>
-                <motion.div class="div32"><motion.p className='ImageTitles'>Zürich</motion.p> <motion.img className='Mountains' src={ZürichMobile}></motion.img>  </motion.div>
-                <motion.div class="div42"><motion.p className='ImageTitles'>Wildlife</motion.p> <motion.img className='Mountains' src={WildlifeMobile}></motion.img> </motion.div>
+                <motion.div class="div12"><motion.p className='ImageTitles1'>Mountains</motion.p> <motion.img className='Mountains' src={MountainsMobile}></motion.img> </motion.div>
+                <motion.div class="div22"><motion.p className='ImageTitles1'>Sports</motion.p> <motion.img className='Mountains' src={SportsMobile}></motion.img></motion.div>
+                <motion.div class="div32"><motion.p className='ImageTitles1'>Zürich</motion.p> <motion.img className='Mountains' src={ZürichMobile}></motion.img>  </motion.div>
+                <motion.div class="div42"><motion.p className='ImageTitles1'>Wildlife</motion.p> <motion.img className='Mountains' src={WildlifeMobile}></motion.img> </motion.div>
             </motion.div>
         </motion.div>
     );
