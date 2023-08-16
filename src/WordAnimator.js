@@ -34,11 +34,11 @@ class WordAnimatior extends Component {
                     opacity: 0 
                 }}
 
-                className="letters" key={index}>{letter}</motion.div>
+                className={"letters"+this.props.variant} key={index}>{letter}</motion.div>
         ));
 
         return (
-            <motion.div className="word-renderer">
+            <motion.div className={"word-renderer"}>
                 {letterComponents}
             </motion.div>
         );

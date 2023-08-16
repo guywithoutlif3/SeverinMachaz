@@ -17,6 +17,8 @@ import Personal from './Personal';
 import PersonalMobile from './PersonalMobile';
 import Photos from './Photos';
 import PhotosMobile from './PhotosMobile';
+import Socials from './Socials';
+import SocialsMobile from './SocialsMobile';
 
 
 function App() {
@@ -68,7 +70,7 @@ function App() {
   return (
     <div className="App" data-darkmode={mode}>
       <MainNav onToggle={handleToggle} />
-      <div>
+      <div className='idfk'>
         {/* View for Desktop */}
         {screenWidth > 500 ?
           <MotionConfig>
@@ -143,8 +145,9 @@ function App() {
             </motion.div >
             <Personal></Personal>
             <Photos></Photos>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <Socials mode={mode}></Socials>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>         
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
           </MotionConfig> : null}
         {/* View for Mobile */}
@@ -203,6 +206,7 @@ function App() {
               <SkillCarousel ></SkillCarousel>
               <PersonalMobile></PersonalMobile>
               <PhotosMobile></PhotosMobile>
+              <SocialsMobile></SocialsMobile>
             </motion.div>
 
           </motion.div >

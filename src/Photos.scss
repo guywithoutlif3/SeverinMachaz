@@ -71,6 +71,22 @@
     overflow: hidden
 }
 
+.div11:hover {
+    transform: scale(103.2%) !important;
+}
+
+.div21:hover {
+    transform: scale(103.2%) !important;
+}
+
+.div31:hover {
+    transform: scale(103.2%) !important;
+}
+
+.div41:hover {
+    transform: scale(103.2%) !important;
+}
+
 
 .Mountains,
 .Sports,
@@ -86,21 +102,4 @@
     .PhotoTitle {
         color: #E0F6E9;
     }
-}
-
-//hover effects
-.div11:hover {
-    transform: scale(102%);
-}
-
-.div21:hover {
-    transform: scale(102%);
-}
-
-.div31:hover {
-    transform: scale(102%);
-}
-
-.div41:hover {
-    transform: scale(102%);
 }

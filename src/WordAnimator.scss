@@ -2,14 +2,24 @@
     white-space: nowrap;
 }
 
-.letters {
+.lettersundefined {
     display: inline-block;
     color: #0C2717;
 }
+.lettersYellow {
+    display: inline-block;
+    color: #FFB247;
+    font-size: 7em;
+}
 
+.lettersYellowMobile{
+    display: inline-block;
+    color: #FFB247;
+    font-size: 3.5em;
+}
 
 [data-darkmode="true"] {
-    .letters {
+    .lettersundefined {
         color: #E0F6E9;
     }
 }
