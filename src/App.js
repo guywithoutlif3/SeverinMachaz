@@ -134,7 +134,7 @@ function App() {
                     opacity: 0, rotate: 0, scale: 1, x: 0, y: 40
                   }}
                   className='WorkSub'>Welcome to my Work page! Here, you'll find a concise display of my skills and the tools I proficiently utilize.</motion.p>
-                <SkillCarousel ></SkillCarousel>
+                <SkillCarousel id="work"></SkillCarousel>
               </motion.div>
             </motion.div >
             <Personal></Personal>
