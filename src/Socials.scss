@@ -1,4 +1,5 @@
 .Socials {
+    background-color: #E0F6E9;
     position: absolute;
     bottom: -75em;
     display: flex;
@@ -41,61 +42,11 @@
     grid-area: 1 / 3 / 2 / 4;
 }
 
-[data-darkmode="true"] {
-    .div13,.div23,.div33{
-        background-color: #0C2717;
-    }
-    .Socials {
-        background-color: #0C2717;
-    }
-    .parent3{
-        background-color: #0C2717;
-    }
-    .Socials {
-        background-color: #0C2717;
-    }
-    .reachouts {
-        background-color: #0C2717;
-    }
-    .socialLogos {
-        //filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(1682%) hue-rotate(92deg) brightness(97%) contrast(100%)
-        -webkit-filter: invert(100%);
-        /* safari 6.0 - 9.0 */
-        filter: invert(100%);
-    }
-
-    .Instagram {
-        background-color: #E0F6E9;
-    }
-
-    .Discord {
-        background-color: #E0F6E9;
-    }
-
-    .Cv {
-        background-color: #E0F6E9;
-    }
-
-    .Linkedin {
-        background-color: #E0F6E9;
-    }
-
-    .Lightroom {
-        background-color: #E0F6E9;
-    }
-
-    .Mail {
-        background-color: #E0F6E9;
-    }
-}
-
-
-
 .SocialTitle {
     position: absolute;
     bottom: 6.5em;
     text-align: center;
-    z-index: 999;
+    z-index: 888;
 }
 
 //Socials grid
@@ -168,4 +119,76 @@
     aspect-ratio: 1;
 }
 
+.Instagram:hover {
+    transform: scale(103%);
+    z-index: 1000 !important;
+}
 
+.Discord:hover {
+    transform: scale(103%);
+    z-index: 1000 !important;
+}
+
+.Cv:hover {
+    transform: scale(103%);
+    z-index: 1000 !important;}
+
+.Linkedin:hover{
+    transform: scale(103%);
+    z-index: 1000 !important;}
+
+.Lightroom:hover {
+    transform: scale(103%);
+    z-index: 1000 !important;}
+
+.Mail:hover {
+    transform: scale(103%);
+    z-index: 1000 !important;}
+
+[data-darkmode="true"] {
+    .div13,.div23,.div33{
+        background-color: #0C2717;
+    }
+    .Socials {
+        background-color: #0C2717;
+    }
+    .parent3{
+        background-color: #0C2717;
+    }
+    .Socials {
+        background-color: #0C2717;
+    }
+    .reachouts {
+        background-color: #0C2717;
+    }
+    .socialLogos {
+        //filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(1682%) hue-rotate(92deg) brightness(97%) contrast(100%)
+        -webkit-filter: invert(100%);
+        /* safari 6.0 - 9.0 */
+        filter: invert(100%);
+    }
+
+    .Instagram {
+        background-color: #E0F6E9;
+    }
+
+    .Discord {
+        background-color: #E0F6E9;
+    }
+
+    .Cv {
+        background-color: #E0F6E9;
+    }
+
+    .Linkedin {
+        background-color: #E0F6E9;
+    }
+
+    .Lightroom {
+        background-color: #E0F6E9;
+    }
+
+    .Mail {
+        background-color: #E0F6E9;
+    }
+}

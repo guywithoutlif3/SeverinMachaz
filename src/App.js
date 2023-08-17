@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import { motion, useScroll, useMotionValueEvent, MotionConfig, useTransform, useMotionValue, useCycle } from "framer-motion"
 import './App.scss';
 import pfp from './imgs/MainPfp.jpg'
@@ -11,7 +11,7 @@ import MobileTextArtDark from './imgs/MobileNameArtDark.svg'
 import MobilePfp from './imgs/PFPMobile.svg'
 import MobilePfpDark from './imgs/pfpMobileDark.svg'
 import MainNav from './MainNav.tsx'
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import SkillCarousel from './SkillCarousel';
 import Personal from './Personal';
 import PersonalMobile from './PersonalMobile';
@@ -33,8 +33,6 @@ function App() {
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollYValue(latest)
     setX(latest / 100)
-    console.log("latest" + latest)
-    console.log(x)
   })
 
   const duration = useTransform(
@@ -52,7 +50,6 @@ function App() {
     };
 
     window.addEventListener('resize', handleResize);
-    console.log(screenWidth)
     // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -60,10 +57,7 @@ function App() {
   }, []);
 
   const handleToggle = (isOn) => {
-    console.log("i have arrived here and my value is: " + isOn)
     setMode(isOn)
-
-
   };
 
 
@@ -206,7 +200,7 @@ function App() {
               <SkillCarousel ></SkillCarousel>
               <PersonalMobile></PersonalMobile>
               <PhotosMobile></PhotosMobile>
-              <SocialsMobile></SocialsMobile>
+              <SocialsMobile mode={mode}></SocialsMobile>
             </motion.div>
 
           </motion.div >

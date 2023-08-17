@@ -1,31 +1,38 @@
 .SocialsMobile {
+    background-color: #E0F6E9;
     position: absolute;
-    bottom: -86em;
+    bottom: -73em;
     display: flex;
     justify-content: center;
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
-    height: 100vh;
+    // height: 100vh;
     /* Adjust the height as needed */
 }
 
 .parent4 {
     position: absolute;
-    left: -125%; 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    bottom: -50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    font-family: Great Sailor;
+    grid-column-gap: 0.2em;
+    grid-row-gap: 0.0px;
 
 }
-.div14 { grid-area: 1 / 1 / 2 / 2; }
-.div24 { grid-area: 1 / 2 / 2 / 3; }
+
+.div14 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div24 {
+    grid-area: 1 / 2 / 2 / 3;
+}
 
 .reachoutsMobile {
-    width: 2.125em;
+    color: #0C2717;
+    width: 3.75em;
     height: auto;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -45,32 +52,26 @@
 
 .SocialTitleMobile {
     position: absolute;
-    bottom: 6.5em;
-    
+    bottom: 5.5em;
+
     z-index: 999;
-    left: -125%; /* Adjust to center horizontally */
-    transform: rotate(90deg); /* Adjust to center and rotate */
+    transform: rotate(90deg);
+    /* Adjust to center and rotate */
 }
 
 //Socials grid
 
 
-.SocialsParent {
+.SocialsParentMobile {
     position: absolute;
-    bottom: 4.5em;
-    z-index: 1;
-    width: 60%;
-    height: 60%;
+    width: 5.25em;
+    top: -10em;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 2fr 2fr;
-    /* Adjust the row heights as needed */
-    grid-column-gap: 3.5em;
-    grid-row-gap: 3em;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
+    grid-template-rows: repeat(3, 1fr);
+    z-index: 998;
+    grid-column-gap: 1.355em;
+    grid-row-gap: 0.5em;
+
 }
 
 .socialLogos {
@@ -79,7 +80,7 @@
     height: 80%;
 }
 
-.Instagram {
+.InstagramMobile {
 
     background-color: #0C2717;
     border-radius: 35px;
@@ -87,43 +88,44 @@
     aspect-ratio: 1;
 }
 
-.Discord {
+.DiscordMobile {
     background-color: #0C2717;
     border-radius: 35px;
     grid-area: 1 / 2 / 2 / 3;
     aspect-ratio: 1;
 }
 
-.Cv {
-    background-color: #0C2717;
-    border-radius: 35px;
-    grid-area: 1 / 3 / 2 / 4;
-    aspect-ratio: 1;
-}
-
-.Linkedin {
-    background-color: #0C2717;
-    border-radius: 35px;
-    grid-area: 2 / 3 / 3 / 4;
-    aspect-ratio: 1;
-}
-
-.Lightroom {
-    background-color: #0C2717;
-    border-radius: 35px;
-    grid-area: 2 / 2 / 3 / 3;
-    aspect-ratio: 1;
-}
-
-.Mail {
+.CvMobile {
     background-color: #0C2717;
     border-radius: 35px;
     grid-area: 2 / 1 / 3 / 2;
     aspect-ratio: 1;
 }
 
+.LinkedinMobile {
+    background-color: #0C2717;
+    border-radius: 35px;
+    grid-area: 2 / 2 / 3 / 3;
+    aspect-ratio: 1;
+}
+
+.LightroomMobile {
+    background-color: #0C2717;
+    border-radius: 35px;
+    grid-area: 3 / 1 / 4 / 2;
+    aspect-ratio: 1;
+}
+
+.MailMobile {
+    background-color: #0C2717;
+    border-radius: 35px;
+    grid-area: 3 / 2 / 4 / 3;
+    aspect-ratio: 1;
+}
+
 
 [data-darkmode="true"] {
+
     .socialLogos {
         //filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(1682%) hue-rotate(92deg) brightness(97%) contrast(100%)
         -webkit-filter: invert(100%);
@@ -131,27 +133,27 @@
         filter: invert(100%);
     }
 
-    .Instagram {
+    .InstagramMobile {
         background-color: #E0F6E9;
     }
 
-    .Discord {
+    .DiscordMobile {
         background-color: #E0F6E9;
     }
 
-    .Cv {
+    .CvMobile {
         background-color: #E0F6E9;
     }
 
-    .Linkedin {
+    .LinkedinMobile {
         background-color: #E0F6E9;
     }
 
-    .Lightroom {
+    .LightroomMobile {
         background-color: #E0F6E9;
     }
 
-    .Mail {
+    .MailMobile{
         background-color: #E0F6E9;
     }
 }

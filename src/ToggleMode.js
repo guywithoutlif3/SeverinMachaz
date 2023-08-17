@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import './ToggleMode.scss';
 import Sun from './imgs/sun.svg'
 import Moon from './imgs/moon.svg'
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
@@ -12,7 +12,6 @@ function ToggleMode({ isOpen, onToggle }) {
     const [isOn, setIsOn] = useState(false);
 
     useEffect(() => {
-        console.log("change in the Toggle Mode too: " + isOn)
         onToggle(isOn); // Call the onToggle function whenever isOn value changes
     }, [isOn, onToggle]);
 

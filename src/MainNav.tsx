@@ -40,11 +40,9 @@ export const MainNav = ({ isOpenToMain, onToggle }: Props) => {
     const [isOnValue, setIsOnValue] = useState(false);
 
     useEffect(() => {
-        console.log("change in the MainTsx too: " + isOnValue);
         onToggle(isOnValue); // Call the onToggle function whenever isOn value changes
     }, [isOnValue, onToggle]);
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log(latest)
         if (latest > 1) {
             if (isOpen) {
                 toggleOpen()

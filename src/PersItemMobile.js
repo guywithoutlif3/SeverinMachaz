@@ -9,11 +9,6 @@ import Underline from './imgs/underline.svg'
 
 function persItemMobile(props) {
 
-
-    console.log(props);
-
-
-
     return (
         <motion.div
             whileInView={{

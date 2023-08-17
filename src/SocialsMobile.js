@@ -20,7 +20,7 @@ function SocialsMobile(props) {
 
     const renderItems = () => {
         const items = [];
-        for (let i = 0; i < 34; i++) {
+        for (let i = 0; i < 12; i++) {  
             if (props.mode === true) {
                 items.push(<motion.img class="reachoutsMobile" src={ReachOutDark} key={i}></motion.img>);
             } else {
@@ -35,13 +35,13 @@ function SocialsMobile(props) {
             <motion.div class="SocialTitleMobile">
                 <WordAnimatior variant="YellowMobile" word="Social" />
             </motion.div>
-            <motion.div class="SocialsParent">
-                <motion.div class="Instagram"><motion.img className='socialLogos' src={Instagram}></motion.img> </motion.div>
-                <motion.div class="Discord"><motion.img className='socialLogos' src={Discord}></motion.img> </motion.div>
-                <motion.div class="Cv"><motion.img className='socialLogos' src={CV}></motion.img> </motion.div>
-                <motion.div class="Linkedin"><motion.img className='socialLogos' src={Linkedin}></motion.img> </motion.div>
-                <motion.div class="Lightroom"><motion.img className='socialLogos' src={Lightroom}></motion.img> </motion.div>
-                <motion.div class="Mail"><motion.img className='socialLogos' src={Mail}></motion.img> </motion.div>
+            <motion.div class="SocialsParentMobile">
+                <motion.div class="InstagramMobile"><motion.img className='socialLogos' src={Instagram}></motion.img> </motion.div>
+                <motion.div class="DiscordMobile"><motion.img className='socialLogos' src={Discord}></motion.img> </motion.div>
+                <motion.div class="CvMobile"><motion.img className='socialLogos' src={CV}></motion.img> </motion.div>
+                <motion.div class="LinkedinMobile"><motion.img className='socialLogos' src={Linkedin}></motion.img> </motion.div>
+                <motion.div class="LightroomMobile"><motion.img className='socialLogos' src={Lightroom}></motion.img> </motion.div>
+                <motion.div class="MailMobile"><motion.img className='socialLogos' src={Mail}></motion.img> </motion.div>
             </motion.div>
             <motion.div class="parent4">
                 <motion.div class="div14"> {renderItems()} </motion.div>
