@@ -46,7 +46,7 @@ function Photos() {
                     }}
                     initial={{
                         x: -450, opacity: 0.5
-                    }} onClick={() => { window.location.href = ""; }} class="div11">  <motion.p className='ImageTitles'>Mountains</motion.p> <motion.img className='Mountains' src={Mountains}></motion.img> </motion.div>
+                    }} onClick={() => { window.location.href = "https://adobe.ly/3s8ZAy0"; }} class="div11">  <motion.p className='ImageTitles'>Landscape</motion.p> <motion.img className='Mountains' src={Mountains}></motion.img> </motion.div>
                 <motion.div 
                 whileInView={{
                     x: 0,
@@ -61,7 +61,7 @@ function Photos() {
                 }}
                 initial={{
                     x: -450, opacity: 0.5
-                }} onClick={() => { window.location.href = ""; }} class="div21"> <motion.p className='ImageTitles'>Sports</motion.p>  <motion.img className='Sports' src={Sports}></motion.img> </motion.div>
+                }} onClick={() => { window.location.href = "https://adobe.ly/45yfaBH"; }} class="div21"> <motion.p className='ImageTitles'>Sports</motion.p>  <motion.img className='Sports' src={Sports}></motion.img> </motion.div>
                 <motion.div 
                 whileInView={{
                     x: 0,
@@ -76,7 +76,7 @@ function Photos() {
                 }}
                 initial={{
                     x: 450, opacity: 0.5
-                }} onClick={() => { window.location.href = ""; }} class="div31"> <motion.p className='ImageTitles'>Wildlife</motion.p>  <motion.img className='Wildlife' src={Wildlife}></motion.img> </motion.div>
+                }} onClick={() => { window.location.href = "https://adobe.ly/45t5kBL"; }} class="div31"> <motion.p className='ImageTitles'>Wildlife</motion.p>  <motion.img className='Wildlife' src={Wildlife}></motion.img> </motion.div>
                 <motion.div 
                 whileInView={{
                     x: 0,
@@ -91,7 +91,7 @@ function Photos() {
                 }}
                 initial={{
                     x: 450, opacity: 0.5
-                }} onClick={() => { window.location.href = ""; }} class="div41"> <motion.p className='ImageTitles'>Zürich</motion.p>  <motion.img className='Zürich' src={Zürich}></motion.img> </motion.div>
+                }} onClick={() => { window.location.href = "https://adobe.ly/3YDJmsW"; }} class="div41"> <motion.p className='ImageTitles'>Travel</motion.p>  <motion.img className='Zürich' src={Zürich}></motion.img> </motion.div>
             </motion.div>
         </motion.div >
     );

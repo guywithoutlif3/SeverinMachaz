@@ -62,12 +62,12 @@ function Socials(props) {
             </motion.div>
 
             <motion.div class="SocialsParent">
-                <motion.div class="Instagram"><motion.img className='socialLogos' src={Instagram}></motion.img> </motion.div>
-                <motion.div class="Discord"><motion.img className='socialLogos' src={Discord}></motion.img> </motion.div>
-                <motion.div class="Cv"><motion.img className='socialLogos' src={CV}></motion.img> </motion.div>
-                <motion.div class="Linkedin"><motion.img className='socialLogos' src={Linkedin}></motion.img> </motion.div>
+                <motion.div onClick={() => { window.location.href = "https://www.instagram.com/guywithoutlif3/"; }} class="Instagram"><motion.img className='socialLogos' src={Instagram}></motion.img> </motion.div>
+                <motion.div onClick={() => { window.location.href = "discordapp.com/users/466652601535037450"; }}  class="Discord"><motion.img className='socialLogos' src={Discord}></motion.img> </motion.div>
+                <motion.div disabled class="Cv"><motion.img className='socialLogos' src={CV}></motion.img> </motion.div>
+                <motion.div onClick={() => { window.location.href = "https://www.linkedin.com/in/severin-machaz-74219b202/"; }} class="Linkedin"><motion.img className='socialLogos' src={Linkedin}></motion.img> </motion.div>
                 <motion.div class="Lightroom"><motion.img className='socialLogos' src={Lightroom}></motion.img> </motion.div>
-                <motion.div class="Mail"><motion.img className='socialLogos' src={Mail}></motion.img> </motion.div>
+                <motion.div onClick={() => { window.location.href = "mailto:severin.machaz@outlook.de?subject=Reaching Out"}}class="Mail"><motion.img className='socialLogos' src={Mail}></motion.img> </motion.div>
             </motion.div>
             <motion.div class="parent3">
                 <motion.div class="div13"> {renderItems()} </motion.div>
