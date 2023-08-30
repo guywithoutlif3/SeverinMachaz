@@ -26,7 +26,7 @@ class SkillItem extends React.Component {
             <ReactCardFlip className='cardItem' isFlipped={this.state.isFlipped} flipDirection="vertical">
                 <motion.div>
                     <div className="LangTitle">{this.props.language}</div>
-                    <motion.img className="SkillLogo" src={this.props.logo}></motion.img>
+                    <motion.img className="SkillLogo" src={this.props.logo}/>
                     <button className="flip" onClick={this.handleClick}><img alt="flipBtn" src={flipSVG}></img></button>
                 </motion.div>
 

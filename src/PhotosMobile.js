@@ -34,7 +34,7 @@ function PhotosMobile() {
             <motion.div class="parent2">
                 <motion.div  onClick={() => { window.location.href = "https://adobe.ly/3s8ZAy0"; }} class="div12"><motion.p className='ImageTitles1'>Landscape</motion.p> <motion.img className='Mountains' src={MountainsMobile}></motion.img> </motion.div>
                 <motion.div onClick={() => { window.location.href = "https://adobe.ly/45yfaBH"; }} class="div22"><motion.p className='ImageTitles1'>Sports</motion.p> <motion.img className='Mountains' src={SportsMobile}></motion.img></motion.div>
-                <motion.div onClick={() => { window.location.href = "https://adobe.ly/45t5kBL"; }} class="div32"><motion.p className='ImageTitles1'>Wildlife</motion.p> <motion.img className='Mountains' src={WildlifeMobile}>Wildlife</motion.img>  </motion.div>
+                <motion.div onClick={() => { window.location.href = "https://adobe.ly/45t5kBL"; }} class="div32"><motion.p className='ImageTitles1'>Wildlife</motion.p> <motion.img className='Mountains' src={WildlifeMobile}></motion.img>  </motion.div>
                 <motion.div onClick={() => { window.location.href = "https://adobe.ly/3YDJmsW"; }} class="div42"><motion.p className='ImageTitles1'>Travel</motion.p> <motion.img className='Mountains' src={ZürichMobile}></motion.img> </motion.div>
             </motion.div>
         </motion.div>

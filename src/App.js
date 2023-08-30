@@ -88,7 +88,7 @@ function App() {
                 animate={{ x: [1000, 0] }}
                 transition={{ duration: 1 }}
               >
-                <img alt='pfp' className='pfp' src={pfp} />
+                <motion.img alt='pfp' className='pfp' src={pfp} />
                 <motion.img
                   alt='circleText'
                   className='circleText'
