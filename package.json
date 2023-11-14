@@ -1,5 +1,6 @@
 {
   "name": "portifolio",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "node --max_old_space_size=8192 node_modules/react-scripts/scripts/build.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
