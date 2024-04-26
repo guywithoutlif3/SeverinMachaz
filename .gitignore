@@ -10,6 +10,7 @@
 
 # production
 /build
+build/static/js/*.js.map
 build/static/js/main.f43327f7.js.map
 build/static/js/main.19148c4a.js.map
 
