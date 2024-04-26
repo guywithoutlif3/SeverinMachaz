@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2c8e0ff4.css",
-    "main.js": "/react-gh-pages/static/js/main.e0fd98c6.js",
-    "static/js/787.be55e6d0.chunk.js": "/react-gh-pages/static/js/787.be55e6d0.chunk.js",
+    "main.css": "/react-gh-pages/static/css/main.694f6b86.css",
+    "main.js": "/react-gh-pages/static/js/main.fbbf7ece.js",
+    "static/js/27.fc66016d.chunk.js": "/react-gh-pages/static/js/27.fc66016d.chunk.js",
     "static/media/SportsMobile.svg": "/react-gh-pages/static/media/SportsMobile.c3e69917667fc1a53b0fbd0c7bb35cd7.svg",
     "static/media/WildlifeMobile.svg": "/react-gh-pages/static/media/WildlifeMobile.956efe796e5c104035e32565eeced91d.svg",
     "static/media/Sports.svg": "/react-gh-pages/static/media/Sports.be627eb7fdd4ab904efea9f0b341d101.svg",
@@ -57,13 +57,10 @@
     "static/media/javascript.svg": "/react-gh-pages/static/media/javascript.c2d463fde72a01350f2e8cdd7797b7ba.svg",
     "static/media/lightroom.svg": "/react-gh-pages/static/media/lightroom.076c52ee41d20e323817079098b36e15.svg",
     "static/media/mail.svg": "/react-gh-pages/static/media/mail.ce76f87e464e661df1658b6bc08cdc39.svg",
-    "static/media/underline.svg": "/react-gh-pages/static/media/underline.95ca9a2e93f3876dbc2d9b703cf5816a.svg",
-    "main.2c8e0ff4.css.map": "/react-gh-pages/static/css/main.2c8e0ff4.css.map",
-    "main.e0fd98c6.js.map": "/react-gh-pages/static/js/main.e0fd98c6.js.map",
-    "787.be55e6d0.chunk.js.map": "/react-gh-pages/static/js/787.be55e6d0.chunk.js.map"
+    "static/media/underline.svg": "/react-gh-pages/static/media/underline.95ca9a2e93f3876dbc2d9b703cf5816a.svg"
   },
   "entrypoints": [
-    "static/css/main.2c8e0ff4.css",
-    "static/js/main.e0fd98c6.js"
+    "static/css/main.694f6b86.css",
+    "static/js/main.fbbf7ece.js"
   ]
 }
