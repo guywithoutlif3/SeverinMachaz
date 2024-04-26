@@ -22,9 +22,9 @@ function SocialsMobile(props) {
         const items = [];
         for (let i = 0; i < 12; i++) {  
             if (props.mode === true) {
-                items.push(<motion.img class="reachoutsMobile" src={ReachOutDark} key={i}></motion.img>);
+                items.push(<><motion.img class="reachoutsMobile" src={ReachOutDark} key={i}></motion.img></>);
             } else {
-                items.push(<motion.img class="reachoutsMobile" src={ReachOut} key={i}></motion.img>);
+                items.push(<><motion.img class="reachoutsMobile" src={ReachOut} key={i}></motion.img></>);
             }
         }
         return items;

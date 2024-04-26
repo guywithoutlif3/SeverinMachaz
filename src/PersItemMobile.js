@@ -33,12 +33,12 @@ function persItemMobile(props) {
                     <p className='PersonalParaMobile'>{props.text} </p>
                 </motion.div>
                 <motion.div style={{ borderRadius: " 0rem 2.1875rem 2.1875rem 0rem " }} className='imageHalf'>
-                    <motion.img className='ContentImagesMobile' src={props.img}></motion.img>
+                    <motion.img loading="lazy" className='ContentImagesMobile' src={props.img}></motion.img>
                 </motion.div>
             </>}
             {props.side === 1 && <>
                 <motion.div style={{ borderRadius: "2.1875rem 0rem 0rem 2.1875rem" }} className='imageHalf'>
-                    <motion.img className='ContentImagesMobile' src={props.img}></motion.img>
+                    <motion.img loading="lazy" className='ContentImagesMobile' src={props.img}></motion.img>
                 </motion.div>
                 <motion.div style={{ borderRadius: " 0rem 2.1875rem 2.1875rem 0rem " }} className='textHalf'>
                     <motion.h2 className='TitlesMobile' Mobile>{props.title} </motion.h2>

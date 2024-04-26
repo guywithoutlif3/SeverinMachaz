@@ -57,7 +57,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>I may not be Van Gogh but painting keeps me relaxed and helps me to calm down, see the world from a different view and appriciating art </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={Painting}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={Painting}></motion.img></motion.div>}</motion.div>
             <motion.div
                 onMouseEnter={() => { onHover(2) }}
                 onMouseLeave={onLeave}
@@ -68,7 +68,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>I always keep my camera close. I enjoy capturing the moment, the beauty of nature or cities aswell as people. </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={Photograhphy}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={Photograhphy}></motion.img></motion.div>}</motion.div>
             <motion.div
                 class="div3"><WordAnimatior word="Personal" /></motion.div>
             <motion.div
@@ -81,7 +81,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>Even tho Im more of an introvert i genuenly enjoy meeting new people and  connectiing with them aswell as I appriciate hanging out with my friends and familly </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={HumanConnection}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={HumanConnection}></motion.img></motion.div>}</motion.div>
             <motion.div
                 onMouseEnter={() => { onHover(4) }}
                 onMouseLeave={onLeave}
@@ -92,7 +92,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>Nomather indoor on plastic or on some good rock, its my biggest passion to climb and keeps me healthy and connected to the amazing Climbing Community. </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={Climbing}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={Climbing}></motion.img></motion.div>}</motion.div>
             <motion.div
                 onMouseEnter={() => { onHover(5) }}
                 onMouseLeave={onLeave}
@@ -103,7 +103,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>I have four fluffy cats that keep me company or that just use me for food. Nomather, I love animals dearly.  </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={Pet}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={Pet}></motion.img></motion.div>}</motion.div>
             <motion.div
                 onMouseEnter={() => { onHover(6) }}
                 onMouseLeave={onLeave}
@@ -114,7 +114,7 @@ function Personal() {
                         <motion.p transition={{duration: 0.36}} initial={{scale: 0}}  whileInView={{scale:1}} className='PersonalPara'>Since i was a little boy i enjoyed a good adventure and im always thrilled about being in a foreign country, exploring. Enjoying time off and trueley living.  </motion.p>
                     </motion.div>
                     :
-                    <motion.div className='PersonalImage'><motion.img className='ContentImages' src={Travel}></motion.img></motion.div>}</motion.div>
+                    <motion.div className='PersonalImage'><motion.img loading="lazy" className='ContentImages' src={Travel}></motion.img></motion.div>}</motion.div>
         </motion.div>
     );
 }

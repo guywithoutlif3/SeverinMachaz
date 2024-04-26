@@ -26,13 +26,13 @@ class SkillItem extends React.Component {
             <ReactCardFlip className='cardItem' isFlipped={this.state.isFlipped} flipDirection="vertical">
                 <motion.div>
                     <div className="LangTitle">{this.props.language}</div>
-                    <motion.img className="SkillLogo" src={this.props.logo}/>
-                    <button className="flip" onClick={this.handleClick}><img alt="flipBtn" src={flipSVG}></img></button>
+                    <motion.img className="SkillLogo" src={this.props.logo}></motion.img>
+                    <button className="flip" onClick={this.handleClick}><motion.img loading="lazy" alt="flipBtn" src={flipSVG}></motion.img></button>
                 </motion.div>
 
                 <motion.div>
                     {this.props.content}
-                    <button className="flip2" onClick={this.handleClick}><img alt="flipBtn" src={flipSVG}></img></button>
+                    <button className="flip2" onClick={this.handleClick}><motion.img loading="lazy" alt="flipBtn" src={flipSVG}></motion.img></button>
                 </motion.div>
             </ReactCardFlip>
         )

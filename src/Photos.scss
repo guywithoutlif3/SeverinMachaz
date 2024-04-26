@@ -1,9 +1,12 @@
 .Photos {
+    z-index: 1111;
     position: absolute;
-    bottom: -55em;
+    bottom: -68em;
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #E0F6E9;
+    background-size: 100% auto;
 }
 
 .PhotoTitle {
@@ -98,8 +101,25 @@
 }
 
 [data-darkmode="true"] {
-
+    .Photos {
+        background-color: #0C2717;
+        background-size: 100em auto;
+    }
     .PhotoTitle {
         color: #E0F6E9;
     }
 }
+
+@media screen and (max-width: 1366px) {
+    .Photos {
+        z-index: 1111;
+        position: absolute;
+        bottom: -60em;
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: #E0F6E9;
+        background-size: 100% auto;
+    }
+}
+

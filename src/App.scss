@@ -1,9 +1,9 @@
-
 [data-darkmode="false"] {
   background: #E0F6E9 !important;
-}
-html {
-  user-select: none;
+
+  html{
+    background-color: #E0F6E9 !important; 
+   }
 }
 
 .App {
@@ -236,8 +236,9 @@ li {
   line-height: normal;
   letter-spacing: 0.14063rem;
   text-transform: capitalize;
+
   position: absolute;
-  bottom: -0.65em;
+  bottom: -1.9em;
   left: 0;
   margin-left: 25%;
   text-align: center;
@@ -257,7 +258,7 @@ li {
   text-align: left;
   position: absolute;
   width: 80%;
-  bottom: -5em;
+  bottom: -11em;
   left: 0;
   margin-left: 10%;
   margin-right: 10%;
@@ -272,7 +273,15 @@ li {
 
 
 [data-darkmode="true"] {
+  .app{
+    background: #0C2717 !important;
+    background-color: #0C2717 !important;
+  }
+  html {
+    background: #0C2717 !important;
+    background-color: #0C2717 !important;
 
+  }
   body{
     background: #0C2717 !important;
   }
@@ -312,4 +321,8 @@ li {
   .WorkSubMobile {
     color: #E0F6E9 !important;
   }
+}
+
+@media screen and (min-width: 2001px) {
+
 }
