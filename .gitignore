@@ -13,7 +13,7 @@
 build/static/js/*.js.map
 build/static/js/main.f43327f7.js.map
 build/static/js/main.19148c4a.js.map
-
+build/static/js/main.e0fd98c6.js.map
 # misc
 .DS_Store
 .env.local
